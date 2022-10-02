@@ -184,11 +184,13 @@ footer{
 footer ul, footer div{
  display: flex;
  flex-direction: row;
+ flex-wrap: wrap;
  gap: 2rem;
-  height: 4rem;
+ height: 4rem;
  align-items: center;
  justify-content: center;
  font-size: 1.2rem;
+
 }
 
 footer ul li{
@@ -211,6 +213,7 @@ footer img{
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  position: relative;
  }
  .nav{
   display: flex;
@@ -224,5 +227,8 @@ footer img{
  }
  .nav li a:hover::before{
   width: 0%;
+ }
+ footer ul{
+  padding: 1rem 5rem 0rem 5rem;
  }
 }
